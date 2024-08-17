@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/ButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="32sp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ScanButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="SCAN"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="1sp"
+                android:paddingTop="0sp"
+                android:paddingBottom="0sp"
+                android:paddingStart="8sp"
+                android:paddingEnd="8sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/ConnectButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="connect"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="1sp"
+                android:paddingTop="0sp"
+                android:paddingBottom="0sp"
+                android:paddingStart="8sp"
+                android:paddingEnd="8sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:id="@+id/ClearButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="clear"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="1sp"
+                android:paddingTop="0sp"
+                android:paddingBottom="0sp"
+                android:paddingStart="8sp"
+                android:paddingEnd="8sp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+    
+        </LinearLayout>
+    
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/TestRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>
